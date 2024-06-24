@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>会計アプリ</title>
+</head>
+<body>
+    <h1>会計アプリ</h1>
+    <div>
+        <label for="product_300">ふつう(¥300): </label>
+        <input type="number" id="product_300" value="0">
+    </div>
+    <div>
+        <label for="product_350">マシ(¥350): </label>
+        <input type="number" id="product_350" value="0">
+    </div>
+    <div>
+        <label for="product_400">マシマシ(¥400): </label>
+        <input type="number" id="product_400" value="0">
+    </div>
+    <button onclick="calculateTotal()">合計金額を計算</button>
+    <button onclick="showTotalSales()">売り上げを表示</button>
+    <h2>合計金額: <span id="total_amount">0</span>円</h2>
+    <h2>今までの売り上げ合計: <span id="total_sales">0</span>円</h2>
+
+    <script src="app.js"></script>
+</body>
+</html>
